@@ -3,3 +3,23 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.main {
+    padding: 2rem 0;
+}
+
+.home_page h1 {
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: .2rem;
+}
+
+.navbar-brand {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #fff !important;
+    font-weight: bolder;
+    letter-spacing: .1rem;
+}
