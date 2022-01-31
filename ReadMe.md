@@ -29,8 +29,8 @@ In your terminal:
 ### Running the Application
 To run the application, in your terminal:
  * $ #!/usr/bin/env python3.6.8
- * $ chmod +x app.py
- * $ ./app.py
+ * $ chmod +x run.py
+ * $ ./run.py
 
 ### Technologies Used
 * Python3 ( Flask )
