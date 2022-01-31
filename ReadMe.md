@@ -33,6 +33,7 @@ To run the application, in your terminal:
  * $ ./app.py
 
 ### Technologies Used
-* Python3.6
+* Python3 ( Flask )
+
 #### License
 This software is approved,verified, licensed and monitored by the MIT.Thus changes and new releases of this software, webApp and designes shall be of the same source. Rights, terms and all conditions apply. Check out he full license release on [MIT](LICENCE).
