@@ -28,7 +28,7 @@ def home():
         posted_at.append(all_news['publishedAt'])
     
     news_data = zip(title, content, img, posted_at)
-    return render_template('home.html',data = news_data)
+    return render_template('home.html', news_data = news_data)
     # return render_template('home.html')
 
 @app.route("/about")
