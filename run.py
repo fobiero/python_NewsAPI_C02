@@ -1,6 +1,4 @@
-# from distutils.log import debug
-from urllib.parse import urljoin
-from wsgiref.util import request_uri
+
 from flask import Flask,render_template,request
 from newsapi import NewsApiClient
 

@@ -39,11 +39,11 @@
 .main-cont {
     /* align-items: center; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .main-cont .thumb {
-    width: 600px;
+    width: 400px;
     margin-right: 4rem;
     height: 250px;
 }
@@ -73,5 +73,6 @@
 .det h5 {
     font-weight: 300;
     font-size: 1rem;
-    color: #aaa;
+    color: inherit;
+    opacity: .7;
 }
