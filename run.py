@@ -14,21 +14,22 @@ def home():
 
     articles = top_headlines['articles']
 
-    news = []
-    # description = []
+    title = []
+    content = []
     img = []
     posted_at = []
 
     for i in range(len(articles)):
         all_news = articles[i]
 
-        news.append(all_news['title'])
-        # description.append(all_news['descripton'])
+        title.append(all_news['title'])
+        content.append(all_news['content'])
         img.append(all_news['urlToImage'])
         posted_at.append(all_news['publishedAt'])
     
-    news_data = zip(news, img, posted_at)
-    return render_template('home.html', news_data = news_data)
+    news_data = zip(title, content, img, posted_at)
+    return render_template('home.html',data = news_data)
+    # return render_template('home.html')
 
 @app.route("/about")
 def about():

@@ -3,10 +3,11 @@
     <h1>Welcome to the best news site ever!</h1>
 </div>
 <div class="main-cont">
-    {% for news, img, posted_at in news_data %}
+    {% for title, content, img, posted_at, in data%}
     <img src="{{img}}" alt="">
-    <h3>Headline : {{news}}</h3>
-    <h4>Posted On: {{posted_at}}</h4>
+    <h3>Headline : {{title}}</h3>
+    <h4>Headline : {{content}}</h4>
+    <h5>Posted On: {{posted_at}}</h5>
     {% endfor%}
 </div>
 {% endblock %}
