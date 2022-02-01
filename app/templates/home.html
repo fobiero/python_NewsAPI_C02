@@ -2,7 +2,7 @@
 <div class="home_page">
     <h1>Welcome to the best news site ever!</h1>
 </div>
-{% for title, content, img, posted_at in news_data%}
+{% for title, content, img, posted_at, url in news_data%}
 <div class="main-cont">
     <div class="thumb">
         <img src="{{img}}" alt="">
@@ -11,6 +11,7 @@
         <h3>Headline : {{title}}</h3>
         <h4>{{content}}</h4>
         <h5>Posted On: {{posted_at}}</h5>
+        <a src="{{url}}" target="_blank"></a>
     </div>
 </div>
 {% endfor%} {% endblock %}

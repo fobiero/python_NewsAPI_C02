@@ -1,6 +1,7 @@
 
 from flask import Flask,render_template,request
 from newsapi import NewsApiClient
+import datetime
 
 app=Flask(__name__, template_folder='app/templates', static_folder='app/static')
 
@@ -16,6 +17,7 @@ def home():
     content = []
     img = []
     posted_at = []
+    url = []
 
     for i in range(len(articles)):
         all_news = articles[i]
@@ -24,8 +26,9 @@ def home():
         content.append(all_news['content'])
         img.append(all_news['urlToImage'])
         posted_at.append(all_news['publishedAt'])
+        url.append(all_news['url'])
     
-    news_data = zip(title, content, img, posted_at)
+    news_data = zip(title, content, img, posted_at, url)
     return render_template('home.html', news_data = news_data)
     # return render_template('home.html')
 
